@@ -1,0 +1,25 @@
+namespace: ValanticSprykerTest\Client\Storyblok
+
+paths:
+  tests: .
+  data: ../../../_data
+  support: _support
+  log: ../../../_output
+
+coverage:
+  enabled: true
+  remote: false
+
+suites:
+  Client:
+    path: .
+    class_name: StoryblokClientTester
+    modules:
+      enabled:
+        - \SprykerTest\Shared\Testify\Helper\Environment:
+            isolated: true
+        - \SprykerTest\Shared\Testify\Helper\ConfigHelper
+        - \SprykerTest\Shared\Testify\Helper\LocatorHelper
+        - \SprykerTest\Shared\Testify\Helper\VirtualFilesystemHelper
+        - \SprykerTest\Shared\Transfer\Helper\TransferGenerateHelper:
+            isolated: true

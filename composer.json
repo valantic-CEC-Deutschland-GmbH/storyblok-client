@@ -1,0 +1,51 @@
+{
+  "name": "valantic-spryker/storyblok-client",
+  "type": "library",
+  "description": "Provides Storyblok client.",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "ext-xmlwriter": "*",
+    "ext-bcmath": "*",
+    "spryker/kernel": "^3.70",
+    "spryker/transfer": "^3.33",
+    "storyblok/php-client": "^2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "ValanticSpryker\\": "src/ValanticSpryker/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "gitlab-domains": [
+      "gitlab.nxs360.com"
+    ],
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "authors": [
+    {
+      "name": "Valantic",
+      "homepage": "https://www.valantic.com"
+    }
+  ],
+  "keywords": [
+    "spryker"
+  ],
+  "include-path": [
+    "src/"
+  ],
+  "require-dev": {
+    "spryker/code-sniffer": "^0.17.18",
+    "spryker/architecture-sniffer": "^0.5.0",
+    "spryker/development": "^3.34"
+  },
+  "scripts": {
+    "cs-check": "phpcs -s --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml --report=full src",
+    "cs-fix": "phpcbf --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src",
+    "md-check": "phpmd src/ text vendor/spryker/development/resources/phpmd/ruleset.xml --minimumpriority 2"
+  }
+}
