@@ -6,7 +6,7 @@ Spryker wrapper for Storyblok PHP client
 
 ### Install package
 ```
-composer req valantic-cec/storyblok-client
+composer req valantic-spryker-eco/storyblok-client
 ```
 
 ### Update your shared config
