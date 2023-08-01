@@ -1,5 +1,5 @@
 {
-  "name": "valantic-cec/storyblok-client",
+  "name": "valantic-spryker-eco/storyblok-client",
   "type": "library",
   "description": "Provides Storyblok client.",
   "license": "proprietary",
