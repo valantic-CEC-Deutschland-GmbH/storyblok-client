@@ -2,7 +2,7 @@
   "name": "valantic-cec/storyblok-client",
   "type": "library",
   "description": "Provides Storyblok client.",
-  "license": "MIT",
+  "license": "proprietary",
   "require": {
     "php": ">=8.0",
     "ext-xmlwriter": "*",
